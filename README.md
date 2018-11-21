@@ -12,7 +12,7 @@ Example usage:
 binaries := Binaries("..", Resolution{
 		LocalPrefix:  "github.com/paradoxical-io",
 		IncludeTests: true,
-	})
+})
 ```
 Which when iterated prints:
 
