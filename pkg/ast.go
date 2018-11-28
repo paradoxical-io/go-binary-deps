@@ -74,7 +74,10 @@ func hasMain(path string, resolution Resolution, cache map[string][]Dependency) 
 			}
 			hasMainPackage = x.Name.Name == main
 		case *ast.FuncDecl:
-			hasMainMethod = x.Name.Name == main
+			if !hasMainMethod {
+				hasMainMethod = x.Name.Name == main
+			}
+
 			return !hasMainMethod
 		}
 		return true
