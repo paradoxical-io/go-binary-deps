@@ -15,9 +15,9 @@ func TestMains(t *testing.T) {
 	for _, bin := range binaries {
 		fmt.Println(bin.BinaryName)
 		for _, dep := range bin.Dependencies {
-			fmt.Println("  " + dep.ImportValue)
+			fmt.Println("  " + dep)
 		}
 	}
 
-	assert.Equal(t, 3, len(binaries))
+	assert.Equal(t, 4, len(binaries))
 }

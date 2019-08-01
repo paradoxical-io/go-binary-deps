@@ -1,5 +1,7 @@
 package util2
 
-func Prints() {
+import "github.com/paradoxical-io/go-binary-deps/util3"
 
+func Prints() {
+	util3.Prints()
 }
